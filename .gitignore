@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environnements virtuels
+.env
+env
+venv/
+.venv/
+
+# Docker
+*.log
+*.pid
+*.sock
+*.tmp
+*.swp
+
+# Données volumineuses
+*.csv
+*.json
+*.db
+/data/
+
+# OS
+.DS_Store
+Thumbs.db

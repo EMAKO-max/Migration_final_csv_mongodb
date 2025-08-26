@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+export_patients.csv
+.env
+.DS_Store

@@ -1,0 +1,8 @@
+dnspython>=2.7.0
+numpy>=1.24
+pandas>=2.3
+pymongo>=4.14
+python-dateutil>=2.9
+pytz>=2025
+six>=1.17
+tzdata>=2025
