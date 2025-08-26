@@ -97,7 +97,7 @@ MONGO_URI = f"mongodb://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/
                    
 
 
-                                      VII. Authentification et utilisateurs MongoDB
+                                                 VII. Authentification et utilisateurs MongoDB
 
 Pour sécuriser l'accès à la base MongoDB, une authentification est activée. Voici les détails :
 
@@ -114,3 +114,28 @@ Le fichier mongo-init.js contient les commandes de création de ces utilisateurs
 Le script Python utilise les variables d’environnement MONGO_USER, MONGO_PASSWORD, MONGO_DB pour se connecter à MongoDB avec l’utilisateur approprié.
 
 Le script est configuré pour se connecter de manière sécurisée avec authentification via cet utilisateur, ce qui assure un contrôle d’accès fiable.
+
+
+                                         VIII.  SCHEMAS DE LA BASE DE  DONNEES: DICTIONNAIRE DE DONNEES
+
+Le jeux de données  "dhealthcare_dataset.csv" contient les champs suivants:
+
+
+| Champ               | Type    | Description                                                                 |
+|--------------------|---------|-----------------------------------------------------------------------------|
+| Name               | String  | Nom des patients                                                           |
+| Age                | Integer | Âge du patient                                                             |
+| Gender             | String  | Genre du patient                                                          |
+| Blood Type         | String  | Groupe sanguin du patient                                                 |
+| Medical Condition  | String  | Condition médicale du patient (ex. Cancer, Diabète)                        |
+| Date of Admission  | Date    | Date d’admission à l’hôpital                                              |
+| Hospital           | String  | Hôpital où le patient a été admis                                         |
+| Insurance Provider | String  | Nom de la compagnie assurant le patient                                   |
+| Billing Amount     | Float   | Frais de santé payés par le patient                                       |
+| Room Number        | Integer | Numéro de chambre dans laquelle le patient est hospitalisé                |
+| Admission Type     | String  | Type d’admission du patient (ex. Urgence)                      |
+| Discharge Date     | Date    | Date de sortie / fin d’hospitalisation                                     |
+| Medication         | String  | Ordonnance prescrite par le docteur au patient                             |
+| Test Results       | String  | Résultats des examens de santé du patient                                  |
+| Doctor             | String  | Nom du docteur qui s’est occupé(e) du patient                              |
+
