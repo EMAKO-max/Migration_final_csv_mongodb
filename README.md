@@ -69,11 +69,8 @@ Le script est configuré pour se connecter de manière sécurisée avec authenti
 
                                                                        IV. Prérequis
 
-1. Python 3.8 ou supérieur
 
-2. MongoDB installé localement
-
-3. Modules Python : pandas; pymongo 
+ Installer docker et docker-compose (sur windows, l'installation de docker compose est incorporé dans celui de docker)
 
                                                                   V. Fichiers du projet
 
