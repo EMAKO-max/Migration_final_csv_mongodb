@@ -102,7 +102,7 @@ Le script est configuré pour se connecter de manière sécurisée avec authenti
 
 2. taper mongosh
 
-3. pour se connecter à la bd avec authentification taper par exemple "docker exec -it mongodb mongo -u migrateUser -p MigratePass123! --authenticationDatabase Medical_db
+3. pour se connecter à la bd avec authentification taper par exemple "docker exec -it mongodb mongo -u migrateUser -p MigratePass123! --authenticationDatabase Medical_db ou encore docker exec -it mongodb mongosh -u rootuser -p rootpass123 --authenticationDatabase admin.
                             
 
                                                                 VII.  SCHEMAS DE LA BASE DE  DONNEES: DICTIONNAIRE DE DONNEES
