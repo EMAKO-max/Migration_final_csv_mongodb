@@ -1,4 +1,5 @@
-
+// Basculer sur la base où tu veux créer les utilisateurs
+db = db.getSiblingDB('Medical_db');
 // Utilisateurs administrateurs (dbOwner)
 db.createUser({
   user: "owner1",
