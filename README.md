@@ -90,19 +90,15 @@ Le script est configuré pour se connecter de manière sécurisée avec authenti
 
 1. Ouvre le terminal ou CMD dans le dossier  du projet.
 
-2. Vérifie que les packages nécessaires sont installés : pip install pandas pymongo
+2. Lancer la création du stack et la migration: docker-compose up --build (pour la prmière connexion, ensuite docker-compose up -d par la suite)
 
-3. Lancer la création du stack et la migration: docker-compose up --build
-
-4. Surveiller la sortie console pour vérifier  la confirmation de l’insertion. la phrase de fin d'insertion devra s'afficher
+3. Surveiller la sortie console pour vérifier  la confirmation de l’insertion. la phrase de fin d'insertion devra s'afficher
 
                                                                                    VI.2 Se placer dans le conteneur et se connecter à la BD
 
 1. Se placer dans le dossier du projet.
 
-2. taper mongosh
-
-3. pour se connecter à la bd avec authentification taper par exemple "docker exec -it mongodb mongosh -u migrateUser -p MigratePass123! --authenticationDatabase Medical_db ou encore docker exec -it mongodb mongosh -u rootuser -p rootpass123 --authenticationDatabase admin.
+2. pour se connecter à la bd avec authentification taper par exemple "docker exec -it mongodb mongosh -u migrateUser -p MigratePass123! --authenticationDatabase Medical_db ou encore docker exec -it mongodb mongosh -u rootuser -p rootpass123 --authenticationDatabase admin.
                             
 
                                                                 VII.  SCHEMAS DE LA BASE DE  DONNEES: DICTIONNAIRE DE DONNEES
