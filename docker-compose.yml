@@ -1,5 +1,4 @@
 services:
-
   mongo:
     image: mongo:6
     container_name: mongodb
@@ -11,6 +10,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: rootuser
       MONGO_INITDB_ROOT_PASSWORD: rootpass123
+    networks:
+      - medical_net
     command: ["mongod", "--auth"]
 
   app:
@@ -28,6 +29,12 @@ services:
       MONGO_DB: Medical_db
     volumes:
       - .:/app
+    networks:
+      - medical_net
 
 volumes:
   mongo-data:
+
+networks:
+  medical_net:
+    driver: bridge
